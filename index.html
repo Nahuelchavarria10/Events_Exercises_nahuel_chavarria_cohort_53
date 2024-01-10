@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Events Exercise</title>
+</head>
+
+<body>
+    <main class=" flex flex-wrap w-screen h-screen bg-black">
+        <!-- 1 -->
+        <div class="flex flex-col w-3/12 h-2/5 border border-red-600 m-auto rounded-xl bg-white">
+
+            <div id="squareOne" class="w-2/6 h-2/6 border border-red-600 text-center m-auto bg-gray-300">
+                gray
+            </div>
+
+            <div class="text-center">
+                <button class="border border-black px-7" onclick="changeColor()">Change</button>
+            </div>
+
+        </div>
+        <!-- 2 -->
+        <div class="flex flex-col gap-10 w-3/12 h-2/5 border border-red-600 m-auto rounded-xl bg-white">
+
+
+            <div id="squareTwo" class="w-2/6 h-2/6 border border-red-600 text-center m-auto bg-gray-300">
+
+            </div>
+
+            <div class="text-center">
+                <input type="text" name="tecx" id="inputText" class="border border-black rounded">
+            </div>
+            <div class="text-center">
+                <button class="border border-black px-7" id="resetValue">Reset</button>
+            </div>
+
+
+
+
+        </div>
+        <!-- 3 -->
+        <div class="flex  gap-10 w-3/12 h-2/5 border border-red-600 m-auto rounded-xl bg-white">
+
+            <fieldset class="w-2/6 h-3/6 border border-red-600 text-start m-auto bg-gray-300">
+                <label for="inputEstatura" class="text-center"> <span class="text-lg font-semibold">estatura</span> <br> <span class="text-sm">en centimetro</span></label>
+                <input type="number" name="numE" id="inputEstatura" class="border border-black rounded">
+
+                <label for="inputPeso"> <span class="text-lg font-semibold">Peso</span> <br> <span class="text-sm">en kilogramos</span> </label>
+                <input type="number" name="numP" id="inputPeso" class="border border-black rounded">
+
+                <div class="text-center">
+                    <button class="border border-black px-7" onclick="CalculateMC()">Calculate</button>
+                </div>
+    
+            </fieldset>
+
+            <fieldset class="w-2/6 h-3/6 border border-red-600 text-start m-auto bg-gray-300">
+                <label for="inputEstatura" class="text-center"> <span class="text-lg font-semibold">Resultado</span> <br> <span class="text-sm">su indice de masa corporal es</span></label>
+                <input type="number" name="numR" id="inputResultado" class="border border-black rounded">
+            </fieldset>
+
+
+
+
+
+        </div>
+        <!-- 4 -->
+        <div class="flex gap-10 w-1/2 h-2/5 border border-red-600 m-auto rounded-xl bg-white">
+
+            <fieldset class="w-2/6 h-3/6 border border-red-600 text-start m-auto bg-gray-300">
+                <label for="inputLocal" class="text-center"><span class="text-lg font-semibold">Monto modeda local</span> <br> <span class="text-sm">sin comas ni puntos</span></label>
+                <input type="number" name="numL" id="inputLocal" class="border border-black rounded">
+
+                <div>
+                    <label for="inputDolar"><span class="text-lg font-semibold">Monto en dolares</span> <br> <span class="text-sm">sin comas ni puntos</span> </label>
+                    <input type="number" name="numD" id="inputDolar" class="border border-black rounded">
+                </div>
+
+                <div class="text-center">
+                    <button class="border border-black px-7" onclick="convert()">Convert</button>
+                </div>
+
+            </fieldset>
+
+            <fieldset class="w-2/6 h-3/6 border border-red-600 text-start m-auto bg-gray-300">
+                <label for="inputLocalTwo" class="text-center"><span class="text-lg font-semibold">Monto Local</span> <br> <span class="text-sm">sin comas ni puntos</span></label>
+                <input type="number" name="numL" id="inputLocalTwo" class="border border-black rounded">
+
+                <div>
+                    <label for="inputDolarTwo"><span class="text-lg font-semibold">Dolares</span> <br> <span class="text-sm">sin comas ni puntos</span> </label>
+                    <input type="number" name="numD" id="inputDolarTwo" class="border border-black rounded">
+                </div>
+
+                <div class="text-center">
+                    <button class="border border-black px-7" id="convertTwo">Convert</button>
+                    <button class="border border-black px-7" id="deleteTwo">Delete</button>
+                </div>
+
+            </fieldset>
+
+            <fieldset class="w-2/6 h-3/6 border border-red-600 text-start m-auto bg-gray-300">
+
+                <label for="inputDolarThree"><span class="text-lg font-semibold">Dolar</span> <br> <span class="text-sm">sin comas ni puntos</span> </label>
+                <input type="number" name="numD" id="inputDolarThree" class="border border-black rounded">
+
+                <div>
+                    <label for="inputLocalThree" class="text-center"><span class="text-lg font-semibold">Monto Local</span> <br> <span class="text-sm">sin comas ni puntos</span></label>
+                <input type="number" name="numL" id="inputLocalThree" class="border border-black rounded">
+                </div>
+
+                <div class="text-center">
+                    <button class="border border-black px-7" id="convertThree">Convert</button>
+                    <button class="border border-black px-7" onclick="deleteThree()">Delete</button>
+                </div>
+
+            </fieldset>
+
+        </div>
+
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
